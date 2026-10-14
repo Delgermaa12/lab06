@@ -156,7 +156,14 @@ pict transfer-neg.model > results/transfer-neg.txt
 
 Хүснэгтийн тоо бүр `results/` доторх гурван файлаас `awk`-аар тоолсон (`~` тэмдгийг хасаад тоолсон). Алдаатай утга гэдэгт from ≠ Valid, to ≠ Valid, amount ∈ {NonPositive, OverBalance, OverLimit} орно.
 
-<!-- B2_TABLE -->
+| Үзүүлэлт | transfer-nc | transfer | transfer-neg |
+|---|---:|---:|---:|
+| Нийт мөр | 15 | 15 | 18 |
+| 0 алдаатай мөр (happy path) | 0 | 2 | 4 |
+| 1 алдаатай мөр | 5 | 10 | 14 |
+| 2 алдаатай мөр | 6 | 3 | 0 |
+| 3 алдаатай мөр | 4 | 0 | 0 |
+| Дансны алдаа ба amount-ын алдаа давхцсан мөр | 8 | 0 | 0 |
 
 Ажиглалт:
 
